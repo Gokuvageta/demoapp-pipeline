@@ -42,7 +42,7 @@ pipeline {
   }
   post {
     always {
-      archiveArtifacts(artifacts: 'target/demoapp.jar')
+      archiveArtifacts 'target/demoapp.jar'
     }
 
     failure {
